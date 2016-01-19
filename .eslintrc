@@ -1,0 +1,20 @@
+{
+  "extends": "openlayers",
+  "env": {
+    "jquery": true
+  },
+  "rules": {
+  },
+  "globals": {
+    "angular": false,
+    "goog": false,
+    "d3": false,
+    "Bloodhound": false,
+    "ol": false,
+    "proj4": false,
+    "ngeo": false,
+    "ngeoModule": false,
+    "gmf": false,
+    "gmfModule": false
+  }
+}
