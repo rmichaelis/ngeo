@@ -21,7 +21,6 @@ goog.require('gmf.proj.EPSG21781');
 goog.require('ngeo.mobileGeolocationDirective');
 
 
-
 /**
  * @param {string} defaultLang The default language.
  * @param {Object.<string, string>} langUrls The languages URLs.
@@ -48,7 +47,6 @@ app.MobileController = function(
       gmfThemes, fulltextsearchUrl);
 };
 goog.inherits(app.MobileController, gmf.AbstractMobileController);
-
 
 
 appModule.controller('MobileController', app.MobileController);

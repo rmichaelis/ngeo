@@ -24,7 +24,6 @@ goog.require('ol.source.OSM');
 gmfModule.constant('isDesktop', true);
 
 
-
 /**
  * Application entry point.
  *

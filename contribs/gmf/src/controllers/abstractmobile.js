@@ -30,7 +30,6 @@ goog.require('ol.style.Style');
 gmfModule.constant('isMobile', true);
 
 
-
 /**
  * Application entry point.
  *

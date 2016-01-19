@@ -86,7 +86,6 @@ gmf.searchDirective = function(gmfSearchTemplateUrl) {
 gmfModule.directive('gmfSearch', gmf.searchDirective);
 
 
-
 /**
  * @constructor
  * @param {angular.Scope} $scope The directive's scope.

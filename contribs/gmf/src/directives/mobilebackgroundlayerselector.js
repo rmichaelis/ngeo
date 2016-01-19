@@ -53,7 +53,6 @@ gmfModule.directive('gmfMobileBackgroundLayerSelector',
     gmf.mobileBackgroundLayerSelectorDirective);
 
 
-
 /**
  * @constructor
  * @param {ngeo.BackgroundLayerMgr} ngeoBackgroundLayerMgr Background layer

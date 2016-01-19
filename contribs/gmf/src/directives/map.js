@@ -39,7 +39,6 @@ gmf.mapDirective = function() {
 gmfModule.directive('gmfMap', gmf.mapDirective);
 
 
-
 /**
  * @param {angular.Scope} $scope The directive's scope.
  * @param {ngeo.Location} ngeoLocation ngeo Location service.

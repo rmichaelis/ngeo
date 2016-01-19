@@ -126,7 +126,6 @@ ngeo.layertreeDirective = function(
 ngeoModule.directive('ngeoLayertree', ngeo.layertreeDirective);
 
 
-
 /**
  * The controller for the "tree node" directive.
  * @param {angular.Scope} $scope Scope.
