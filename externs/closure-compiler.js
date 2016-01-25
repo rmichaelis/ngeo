@@ -16,3 +16,11 @@ Navigator.prototype.systemLanguage;
  * @type {string}
  */
 Navigator.prototype.userLanguage;
+
+/**
+ * @typedef {{
+ *   protocol: (string|undefined),
+ *   hostname: (string|undefined)
+ * }}
+ */
+var WindowLocation;
