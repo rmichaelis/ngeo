@@ -51,4 +51,4 @@ goog.inherits(app.MobileController, gmf.AbstractMobileController);
 
 
 
-appModule.controller('MobileController', app.MobileController);
+app.module.controller('MobileController', app.MobileController);
