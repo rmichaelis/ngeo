@@ -20,6 +20,7 @@ goog.require('gmf.proj.EPSG21781');
 /** @suppress {extraRequire} */
 goog.require('ngeo.mobileGeolocationDirective');
 
+/* global app, appModule */
 
 /**
  * @param {string} defaultLang The default language.
