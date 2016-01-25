@@ -27,7 +27,7 @@ goog.require('ol.style.Fill');
 goog.require('ol.style.Stroke');
 goog.require('ol.style.Style');
 
-gmfModule.constant('isMobile', true);
+gmf.module.constant('isMobile', true);
 
 
 
@@ -276,4 +276,4 @@ gmf.AbstractMobileController.prototype.initLanguage = function() {
   }
 };
 
-gmfModule.controller('AbstractMobileController', gmf.AbstractMobileController);
+gmf.module.controller('AbstractMobileController', gmf.AbstractMobileController);

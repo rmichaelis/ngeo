@@ -21,7 +21,7 @@ goog.require('ol.layer.Tile');
 goog.require('ol.source.OSM');
 
 
-gmfModule.constant('isDesktop', true);
+gmf.module.constant('isDesktop', true);
 
 
 
@@ -97,5 +97,5 @@ gmf.AbstractDesktopController = function(
 };
 
 
-gmfModule.controller('AbstractDesktopController',
+gmf.module.controller('AbstractDesktopController',
     gmf.AbstractDesktopController);
