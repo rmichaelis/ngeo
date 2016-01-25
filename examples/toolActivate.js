@@ -107,18 +107,6 @@ app.MainController = function(ngeoFeatureOverlayMgr, ngeoToolActivateMgr) {
   //Create and manage point
 
   /**
-   * @type {function()}
-   * @export
-   */
-  this.togglePoint = function() {
-    if (drawPoint.getActive()) {
-      ngeoToolActivateMgr.deactivateTool(pointToolActivate);
-    } else {
-      ngeoToolActivateMgr.activateTool(pointToolActivate);
-    }
-  };
-
-  /**
    * @type {ol.interaction.Draw}
    * @export
    */
@@ -141,22 +129,22 @@ app.MainController = function(ngeoFeatureOverlayMgr, ngeoToolActivateMgr) {
   var pointToolActivate = new ngeo.ToolActivate('mapTools', activePoint,
       deactivePoint);
 
-  ngeoToolActivateMgr.registerTool(pointToolActivate);
-
-
-  //Create and Manage polygon
-
   /**
    * @type {function()}
    * @export
    */
-  this.togglePolygon = function() {
-    if (drawPolygon.getActive()) {
-      ngeoToolActivateMgr.deactivateTool(polygonToolActivate);
+  this.togglePoint = function() {
+    if (drawPoint.getActive()) {
+      ngeoToolActivateMgr.deactivateTool(pointToolActivate);
     } else {
-      ngeoToolActivateMgr.activateTool(polygonToolActivate);
+      ngeoToolActivateMgr.activateTool(pointToolActivate);
     }
   };
+
+  ngeoToolActivateMgr.registerTool(pointToolActivate);
+
+
+  //Create and Manage polygon
 
   /**
    * @type {ol.interaction.Draw}
@@ -180,6 +168,18 @@ app.MainController = function(ngeoFeatureOverlayMgr, ngeoToolActivateMgr) {
 
   var polygonToolActivate = new ngeo.ToolActivate('mapTools', activePolygon,
       deactivePolygon);
+
+  /**
+   * @type {function()}
+   * @export
+   */
+  this.togglePolygon = function() {
+    if (drawPolygon.getActive()) {
+      ngeoToolActivateMgr.deactivateTool(polygonToolActivate);
+    } else {
+      ngeoToolActivateMgr.activateTool(polygonToolActivate);
+    }
+  };
 
   ngeoToolActivateMgr.registerTool(polygonToolActivate);
 
