@@ -302,4 +302,4 @@ ngeo.LayerHelper.prototype.getFlatLayers_ = function(layer, array) {
   return array;
 };
 
-ngeoModule.service('ngeoLayerHelper', ngeo.LayerHelper);
+ngeo.module.service('ngeoLayerHelper', ngeo.LayerHelper);

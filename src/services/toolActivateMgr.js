@@ -48,7 +48,7 @@ ngeo.ToolActivate = function(toolsGroupName, activateFn, deactivateFn,
 };
 
 
-ngeoModule.value('ngeoToolActivate', ngeo.ToolActivate);
+ngeo.module.value('ngeoToolActivate', ngeo.ToolActivate);
 
 
 
@@ -171,4 +171,4 @@ ngeo.ToolActivateMgr.prototype.getGroups = function() {
 };
 
 
-ngeoModule.service('ngeoToolActivateMgr', ngeo.ToolActivateMgr);
+ngeo.module.service('ngeoToolActivateMgr', ngeo.ToolActivateMgr);

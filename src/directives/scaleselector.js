@@ -9,7 +9,7 @@ goog.require('ol.Map');
 goog.require('ol.Object');
 
 
-ngeoModule.value('ngeoScaleselectorTemplateUrl',
+ngeo.module.value('ngeoScaleselectorTemplateUrl',
     /**
      * @param {angular.JQLite} element Element.
      * @param {angular.Attributes} attrs Attributes.
@@ -82,7 +82,7 @@ ngeo.scaleselectorDirective = function(ngeoScaleselectorTemplateUrl) {
 };
 
 
-ngeoModule.directive('ngeoScaleselector', ngeo.scaleselectorDirective);
+ngeo.module.directive('ngeoScaleselector', ngeo.scaleselectorDirective);
 
 
 
@@ -261,5 +261,5 @@ ngeo.ScaleselectorController.prototype.registerResolutionChangeListener_ =
 };
 
 
-ngeoModule.controller('NgeoScaleselectorController',
+ngeo.module.controller('NgeoScaleselectorController',
     ngeo.ScaleselectorController);
