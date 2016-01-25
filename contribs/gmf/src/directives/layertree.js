@@ -13,6 +13,7 @@ gmfModule.value('gmfLayertreeTemplate',
     /**
      * @param {angular.JQLite} element Element.
      * @param {angular.Attributes} attrs Attributes.
+     * @return {string} Template.
      */
     function(element, attrs) {
       var subTemplateUrl = gmf.baseTemplateUrl + '/layertree.html';
@@ -32,6 +33,7 @@ ngeoModule.value('ngeoLayertreeTemplateUrl',
     /**
      * @param {angular.JQLite} element Element.
      * @param {angular.Attributes} attrs Attributes.
+     * @return {string} Template URL.
      */
     function(element, attrs) {
       return gmf.baseTemplateUrl + '/layertree.html';
@@ -415,7 +417,7 @@ gmf.LayertreeController.prototype.getWMSLegendURL_ = function(layer,
 
 /**
  * Return the current scale of the map.
- * @return {number}
+ * @return {number} Scale.
  * @private
  */
 gmf.LayertreeController.prototype.getScale_ = function() {

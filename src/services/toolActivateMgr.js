@@ -144,7 +144,7 @@ ngeo.ToolActivateMgr.prototype.activateTool = function(tool) {
  * param.
  * @param {ngeo.ToolActivate} tool Tool from the group of tools that will be
  *     deactivated.
- * @param {boolean=} opt_force
+ * @param {boolean=} opt_force Force.
  * @export
  */
 ngeo.ToolActivateMgr.prototype.deactivateTool = function(tool, opt_force) {
@@ -161,7 +161,7 @@ ngeo.ToolActivateMgr.prototype.deactivateTool = function(tool, opt_force) {
 
 /**
  * Get all groups of tools
- * @return {Object.<string, Array.<ngeo.ToolActivate>>}
+ * @return {Object.<string, Array.<ngeo.ToolActivate>>} Groups.
  * @export
  */
 ngeo.ToolActivateMgr.prototype.getGroups = function() {

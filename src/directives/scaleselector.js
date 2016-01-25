@@ -13,6 +13,7 @@ ngeoModule.value('ngeoScaleselectorTemplateUrl',
     /**
      * @param {angular.JQLite} element Element.
      * @param {angular.Attributes} attrs Attributes.
+     * @return {string} Template URL.
      */
     function(element, attrs) {
       var templateUrl = attrs['ngeoScaleselectorTemplateurl'];

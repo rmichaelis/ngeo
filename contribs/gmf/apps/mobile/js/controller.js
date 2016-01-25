@@ -25,7 +25,7 @@ goog.require('ngeo.mobileGeolocationDirective');
  * @param {string} defaultLang The default language.
  * @param {Object.<string, string>} langUrls The languages URLs.
  * @param {angularGettext.Catalog} gettextCatalog Gettext catalog.
- * @param {ngeo.GetBrowserLanguage} ngeoGetBrowserLanguage
+ * @param {ngeo.GetBrowserLanguage} ngeoGetBrowserLanguage Browser Language Service.
  * @param {angular.Scope} $scope Scope.
  * @param {ngeo.StateManager} ngeoStateManager the state manager.
  * @param {ngeo.FeatureOverlayMgr} ngeoFeatureOverlayMgr The ngeo feature
