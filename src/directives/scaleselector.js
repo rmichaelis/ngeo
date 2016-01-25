@@ -248,8 +248,7 @@ ngeo.ScaleselectorController.prototype.handleViewChange_ = function(e) {
 /**
  * @private
  */
-ngeo.ScaleselectorController.prototype.registerResolutionChangeListener_ =
-    function() {
+ngeo.ScaleselectorController.prototype.registerResolutionChangeListener_ = function() {
   if (!goog.isNull(this.resolutionChangeKey_)) {
     goog.events.unlistenByKey(this.resolutionChangeKey_);
   }
