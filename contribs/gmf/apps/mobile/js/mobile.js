@@ -48,8 +48,14 @@ app.MobileController = function(
     gmfThemes, fulltextsearchUrl) {
   goog.base(
       this, defaultLang, langUrls, gettextCatalog, ngeoGetBrowserLanguage,
-      $scope, ngeoStateManager, ngeoFeatureOverlayMgr,
-      gmfThemes, fulltextsearchUrl);
+      $scope, ngeoStateManager, ngeoFeatureOverlayMgr, gmfThemes, [{
+        datasetTitle: 'Internal',
+        labelKey: 'label',
+        groupsKey: 'layer_name',
+        groupValues: ['osm'],
+        projection: 'EPSG:21781',
+        url: fulltextsearchUrl
+      }]);
 };
 goog.inherits(app.MobileController, gmf.AbstractMobileController);
 

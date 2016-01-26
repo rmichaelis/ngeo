@@ -49,9 +49,10 @@ gmfModule.constant('isMobile', true);
  * @param {angular.Scope} $scope Scope.
  * @param {ngeo.StateManager} ngeoStateManager the state manager.
  * @param {ngeo.FeatureOverlayMgr} ngeoFeatureOverlayMgr The ngeo feature
- *     overlay manager service.
+ *      overlay manager service.
  * @param {gmf.Themes} gmfThemes Themes service.
- * @param {string} fulltextsearchUrl url to a gmf fulltextsearch service.
+ * @param {Array.<gmfx.SearchDirectiveDatasource>} searchDatasources
+ *      The full-text search datasources.
  * @constructor
  * @ngInject
  * @export
@@ -59,7 +60,7 @@ gmfModule.constant('isMobile', true);
 gmf.AbstractMobileController = function(
     defaultLang, langUrls, gettextCatalog, ngeoGetBrowserLanguage,
     $scope, ngeoStateManager, ngeoFeatureOverlayMgr,
-    gmfThemes, fulltextsearchUrl) {
+    gmfThemes, searchDatasources) {
 
   /**
    * A reference to the current theme
@@ -74,14 +75,7 @@ gmf.AbstractMobileController = function(
    * @type {Array.<gmfx.SearchDirectiveDatasource>}
    * @export
    */
-  this.searchDatasources = [{
-    datasetTitle: 'Internal',
-    labelKey: 'label',
-    groupsKey: 'layer_name',
-    groupValues: ['osm'],
-    projection: 'EPSG:21781',
-    url: fulltextsearchUrl
-  }];
+  this.searchDatasources = searchDatasources;
 
   /**
    * @type {boolean}

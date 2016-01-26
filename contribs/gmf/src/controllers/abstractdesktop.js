@@ -36,27 +36,21 @@ gmfModule.constant('isDesktop', true);
  * by the HTML page and the controller to provide the configuration.
  *
  * @param {ngeo.FeatureOverlayMgr} ngeoFeatureOverlayMgr The ngeo feature
- *     overlay manager service.
- * @param {string} fulltextsearchUrl url to a gmf fulltextsearch service.
+ *      overlay manager service.
+ * @param {Array.<gmfx.SearchDirectiveDatasource>} searchDatasources
+ *      The full-text search datasources.
  * @constructor
  * @ngInject
  * @export
  */
 gmf.AbstractDesktopController = function(
-    ngeoFeatureOverlayMgr, fulltextsearchUrl) {
+    ngeoFeatureOverlayMgr, searchDatasources) {
 
   /**
    * @type {Array.<gmfx.SearchDirectiveDatasource>}
    * @export
    */
-  this.searchDatasources = [{
-    datasetTitle: 'Internal',
-    labelKey: 'label',
-    groupsKey: 'layer_name',
-    groupValues: ['osm'],
-    projection: 'EPSG:21781',
-    url: fulltextsearchUrl
-  }];
+  this.searchDatasources = searchDatasources;
 
   /**
    * @type {ol.Map}

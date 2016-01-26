@@ -34,7 +34,15 @@ appModule.constant(
  */
 app.DesktopController = function(
     ngeoFeatureOverlayMgr, fulltextsearchUrl) {
-  goog.base(this, ngeoFeatureOverlayMgr, fulltextsearchUrl);
+  goog.base(
+      this, ngeoFeatureOverlayMgr, [{
+        datasetTitle: 'Internal',
+        labelKey: 'label',
+        groupsKey: 'layer_name',
+        groupValues: ['osm'],
+        projection: 'EPSG:21781',
+        url: fulltextsearchUrl
+      }]);
 };
 goog.inherits(app.DesktopController, gmf.AbstractDesktopController);
 
